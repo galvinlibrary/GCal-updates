@@ -6,7 +6,7 @@
     $two_days_ago = date("Y-m-d", time()-172800);   
     $timeMin = $two_days_ago . 'T00:00:00.000Z';
     $timeMax = date("Y-m-d", time()+(($daysToLoad*86400)+86400)) . 'T23:59:00.000Z';
-    $debug=true;
+    $debug=false;
     $query="";
     $sql="";
     $dateFormat="Y-m-d";
@@ -79,10 +79,6 @@
     }
   }// end function
 
-  $table='hours_gdata_galvin';
-  $Itable='hours_gdata_ncfst';
-  $ifshCal='iit.edu_5i0pd1jtpscfvfbebc1b2of5jc@group.calendar.google.com';
-  $galvinCalendar='iit.edu_8l0d8qd4qtfn7skmgkiu55uv58%40group.calendar.google.com';
-  $sql = load_calendar_data(3, $ifshCal, $Itable);
+
 
 ?>
