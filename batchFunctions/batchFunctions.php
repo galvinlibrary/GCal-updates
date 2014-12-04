@@ -11,8 +11,6 @@
     $sql="";
     $dateFormat="Y-m-d";
     $timeFormat="Hi";
-  //	$userid = 'cmcclur1@iit.edu';
-  //	$magicCookie = 'cookie';
       
     $key = file_get_contents('api_key.txt'); 
     // not included in github account for security. Uses digitalservices API key
