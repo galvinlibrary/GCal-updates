@@ -75,10 +75,8 @@
       $body="An error occurred while processing Google calendar data for $table. Please investigate.";
       echo $body;
       $body = wordwrap($body, 40);
-      mail('cmcclur1@iit.edu', 'Batch process failure', $body, "From: cmcclur1@iit.edu");
+      mail('digitalservices@iit.edu', 'Batch process failure', $body, "From: cmcclur1@iit.edu");
     }
   }// end function
-
-
 
 ?>
